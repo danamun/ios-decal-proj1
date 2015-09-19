@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatsViewController" customModule="TODO" customModuleProvider="target">
+            <connections>
+                <outlet property="numberLabel" destination="w6I-rb-cHv" id="4ba-WG-kxU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You have completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8M-Zf-mVH">
+                    <rect key="frame" x="200" y="187" width="200" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tasks in 24 hours!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-vy-BzV">
+                    <rect key="frame" x="232" y="461" width="136" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-rb-cHv">
+                    <rect key="frame" x="200" y="229" width="200" height="200"/>
+                    <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="ZnE-8r-ZGI"/>
+                        <constraint firstAttribute="width" constant="200" id="byN-AO-3HT"/>
+                        <constraint firstAttribute="width" constant="200" id="s4w-Jb-EdY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="byN-AO-3HT"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w6I-rb-cHv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8Q7-KB-wdc"/>
+                <constraint firstItem="w6I-rb-cHv" firstAttribute="top" secondItem="u8M-Zf-mVH" secondAttribute="bottom" constant="20" id="F1X-hv-GkN"/>
+                <constraint firstItem="LCD-vy-BzV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T3L-aF-0xA"/>
+                <constraint firstItem="LCD-vy-BzV" firstAttribute="top" secondItem="w6I-rb-cHv" secondAttribute="bottom" constant="20" id="WMw-Po-8g5"/>
+                <constraint firstItem="w6I-rb-cHv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ymx-yu-d7e"/>
+                <constraint firstItem="u8M-Zf-mVH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="toI-jn-nhT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
