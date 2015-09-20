@@ -29,8 +29,8 @@ class AllTasksModel: NSObject {
             for i in 0...listOfTasks.count-1 {
                 let seconds = -listOfTasks[i].date.timeIntervalSinceNow
                 let hours = seconds/3600;
-                if (hours > 24) {
-                    numOfCompleted += 0
+                if ((hours < 24) && (listOfTasks[i].completed)) {
+                    numOfCompleted += 1
                 }
             }
         }
